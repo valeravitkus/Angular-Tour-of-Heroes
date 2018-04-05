@@ -22,6 +22,10 @@ selectedHero: Hero;
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
+    this.getHeroes();
+  }
+  getHeroes(): void {
+    this.heroes = this.heroService.getHeroes();
   }
 
 }
