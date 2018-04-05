@@ -1,3 +1,4 @@
+import { MessageService } from './message.service';
 import { MessagesComponent } from './messages/messages.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,7 +22,8 @@ import { HeroService } from './hero.service';
     FormsModule
   ],
   providers: [
-    HeroService
+    HeroService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
